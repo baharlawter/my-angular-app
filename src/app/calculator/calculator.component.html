@@ -1,9 +1,21 @@
-<h1>Debt To Income Calculation</h1>
-<form>
-  <input type="number" placeholder="Gross Income" />
-  <input type="number" placeholder="Rent/Mortgage" />
-  <input type="number" placeholder="Car Payment" />
-  <input type="number" placeholder="Credit Card Payment" />
-  <input type="number" placeholder=" Other Payments" />
-  <button>Submit</button>
+<h1>Debt To Income Calculator</h1>
+
+<form (ngSubmit)="calculateDTI()">
+  <input type="number" name="grossIncome" placeholder="Gross Income" [(ngModel)]="grossIncome" />
+  <input type="number" name="rent" placeholder="Rent/Mortgage" [(ngModel)]="rent" />
+  <input type="number" name="carPayment" placeholder="Car Payment" [(ngModel)]="carPayment" />
+  <input
+    type="number"
+    name="creditCard"
+    placeholder="Credit Card Payment"
+    [(ngModel)]="creditCard"
+  />
+  <input
+    type="number"
+    name="otherPayments"
+    placeholder="Other Payments"
+    [(ngModel)]="otherPayments"
+  />
+
+  <button type="submit">Calculate</button>
 </form>
