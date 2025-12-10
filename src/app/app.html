@@ -1,14 +1,15 @@
-<nav>
-  <a routerLink="/calculator " routerLinkActive="active">Calculator</a>|
-  <a routerLink="/cart" routerLinkActive="active">Cart</a>
-</nav>
-<router-outlet></router-outlet>
-
+<header class="header">
+  <nav>
+    <a class="atags" routerLink="/calculator " routerLinkActive="active">Calculator</a>|
+    <a class="atags" routerLink="/cart" routerLinkActive="active">Cart</a>
+  </nav>
+</header>
 <main class="main">
   <h1>Hello, {{ title() }}</h1>
   <p>This is Bahar's First Angular App 🎉</p>
+  <router-outlet></router-outlet>
 </main>
-<footer>
+<footer class="footer">
   &copy; 2025 My Financial App
 
   <div>
