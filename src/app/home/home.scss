@@ -1,0 +1,32 @@
+.home-div {
+  max-width: 800px; /* keeps content centered and not too wide */
+  margin: 20px auto; /* centers the div horizontally */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-img {
+  display: block;
+  max-width: 100%; /* makes image responsive */
+  height: auto;
+  margin: 0 auto 20px; /* centers image and adds space below */
+  border-radius: 6px;
+}
+
+.home-parag {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px; /* indent list */
+}
+
+ul li {
+  margin-bottom: 8px; /* space between list items */
+}
